@@ -29,7 +29,7 @@ export const appRoutes: Routes = [
   { path: "homepage", component: HomePageComponent },
   { path: "login", component: LoginComponent, },
   { path: "signup", component: SignupComponent },
-  { path: "achievements", component: AchievementsComponent },
+  { path: "achievements", component: AchievementsComponent, canActivate:[AuthGuard],},
   { path: "signupOrganizer", component: SignupOrganizerComponent },
   {
     path: "dashboard",
