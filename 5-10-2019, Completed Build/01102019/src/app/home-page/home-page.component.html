@@ -1,0 +1,74 @@
+<div class="background">
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="navbar-collapse collapse justify-content-between">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">LOGO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+            </ul>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#" routerLink="/signup">Sign up</a>
+                <a class="nav-item nav-link" href="#" routerLink="/login">Login</a>
+                <a class="nav-item nav-link" href="#" routerLink="/dashboard">Go to Dashboard</a>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="float-right">
+        <div class="indent">
+        <a href="#" routerLink="/organizer">How to organize events </a>
+        </div>       
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="container textalign">
+        <div class="jumbotron">
+            <h1>ATHENA</h1>
+            <p>ATHENA is an online repository of your achievements and associated events!! </p>
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-center main-content h-100">
+        <div class="row content">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-8 text-center scroll">
+                <h1>Upcoming Events</h1>
+                <div class="events">
+                    <!-- <sdivdeshow [imageUrls]="Events"></sdivdeshow> -->
+                    <slideshow [height]="'300px'" [minHeight]="'525px'" [autoPlay]="true" [showArrows]="false" [imageUrls]="Events" [lazyLoad]="Events?.length > 1" [autoPlayWaitForLazyLoad]="true">
+                    </slideshow>
+
+
+
+
+                </div>
+            </div>
+            <div class="col-sm-2">
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer class="container-fluid text-center">
+            <p>For more information contact</p>
+        </footer>
+
+    </div>

@@ -1,0 +1,85 @@
+body {
+  background-image: linear-gradient(to right, #9cecfb , #65c7f7, #0052d4);
+  height: 170vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-page {
+  width : 400px;
+  padding: 10% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  background: rgba(255,255,255,0.6);
+  max-width: 400px;
+  margin: auto auto 100px;
+  padding: 45px;
+  text-align: center;
+  overflow:hidden;
+}
+
+.form input {
+  font-family: 'Ubuntu', sans-serif;
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin:0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+button {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.creation {
+  color: white;
+}
+.link {
+  text-decoration: none;
+}
+
+#bio {
+  font-family: 'Ubuntu', sans-serif;
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin:0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#interests {
+  font-family: 'Ubuntu', sans-serif;
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin:0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+li {
+  font-family: 'Ubuntu', sans-serif;
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin:0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}

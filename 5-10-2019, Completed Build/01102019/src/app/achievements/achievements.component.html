@@ -1,0 +1,111 @@
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="navbar-collapse collapse justify-content-between">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">LOGO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+            </ul>
+            <div class="wrap">
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                   <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                  </button>
+                </div>
+             </div>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#" routerLink="/dashboard">Dashboard</a>
+                <a class="nav-item nav-link" href="#" routerLink="/events">Events</a>
+                <a class="nav-item nav-link" href="#">Logout</a>
+
+
+            </div>
+
+        </div>
+    </nav>
+    <div class="reqMargin"></div>
+    <div class="box1">
+        <p>Add Your Achievements</p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add new achievement</button>
+        <p></p>
+        <button type="submit" class="btn btn-primary">Create</button>
+        <!--  Modal Goes After The div  -->
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">New Achievement</h2>
+                    <button class="close" type="button" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <p>Select Category Of Achievement</p>
+                    
+                    <div title="Please select the Category" class="form-group row">
+                        <div class="col-6">
+                        <select placeholder="Categories" class="form-control" (change)="changeCategory($event.target.value)">
+                            <option *ngFor ="let count of categoryList">{{count.name}} </option>
+                        </select>
+                        </div>
+                    </div>
+    
+            
+                    <label>Subcategory</label>
+                    <div title="Please select the Subcategory" class="form-group row">
+                    <div class="col-6">
+                        <select placeholder="Subcategory" class="form-control">
+                            <option *ngFor ="let subcategory of subcategories">{{subcategory}} </option>
+                      </select> 
+                    </div>  
+                    </div>
+                        <!-- Dropdown Menu Closing Tag -->
+                    
+                    <!-- Dropdown Closing Tag -->
+                </div>
+                <!-- Modal Body Closing Tag -->
+                <div class="modal-footer">
+                    <!--<button class="btn btn-primary" type="button" data-dismiss="modal">Close</button>-->
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Next</button>
+                    <button class="btn btn-success" type="button" data-dismiss="modal">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">New Achievement</h2>
+                    <button class="close" type="button" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <p>Attach a file</p>
+                    <form>
+                        
+                        <label class="btn btn-primary">
+                            Browse <input type="file" hidden>
+                        </label>
+                       <br><br>
+                    </form>   
+                    
+                    <!-- Dropdown Closing Tag -->
+                </div>
+                <!-- Modal Body Closing Tag -->
+                <div class="modal-footer">
+                    
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-dismiss="modal">Prev</button>
+                    <button class="btn btn-primary" type="button" data-dismiss="modal">Close</button>
+                    <button class="btn btn-success" type="button" data-dismiss="modal">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

@@ -1,0 +1,118 @@
+/* html { height: 100%; } */
+
+
+/* body { height: 100%; display: flex } */
+
+html {
+    height: 100%;
+}
+
+
+/* body > div { flex: 1; } */
+
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
+    background-size: cover;
+    background-position: center;
+}
+
+.background {
+    background-image: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
+    background-size: cover;
+    background-position: center;
+}
+
+.textalign {
+    text-align: center;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+.row.content::before {
+    height: 100%;
+}
+
+.main-content {
+    padding-top: 2%;
+    height: 100%;
+}
+
+
+/* Set gray background color and 100% height */
+
+.sidenav {
+    padding-top: 20px;
+    /* background-color: #f1f1f1; */
+    height: 100%;
+}
+
+.scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* Set black background color, white text and some padding */
+
+footer {
+    background-color: rgb(228, 227, 227);
+    color: rgb(73, 73, 73);
+    padding: 15px;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+}
+
+.indent{
+    padding-right: 1.8em
+}
