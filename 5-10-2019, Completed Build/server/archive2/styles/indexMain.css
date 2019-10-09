@@ -1,0 +1,28 @@
+body{
+    background-color: #eeeeee;
+}
+
+nav
+{
+    background-color: #1b2d43;
+}
+
+.pusher
+{
+    margin-left: 11rem;
+    margin-right: 1rem;
+    margin-top: 4.5rem;
+    
+}
+
+
+.card
+{
+    margin-top: 5rem;
+    width: 30rem;
+}
+
+.navbar
+{
+    margin-bottom: 1rem;
+}

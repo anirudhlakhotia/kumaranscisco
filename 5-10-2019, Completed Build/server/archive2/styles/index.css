@@ -1,0 +1,86 @@
+body{
+    background-color: #eeeeee;
+}
+
+.ui.sidebar.visible.vertical.menu
+{
+    background-color: #1b2d43;
+    width: 10rem;
+    color: white;
+}
+
+.jumbotron-fluid
+{
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0.5px 0.5px 2px #fbfbfb;
+    padding: 3rem;
+    padding-top: 1rem;
+}
+
+
+a.item
+{
+    color: white;
+}
+
+.rightMyMenu
+{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+nav
+{
+    background-color: #1b2d43;
+    margin-left: 10rem;
+}
+
+.modal-header
+{
+    padding-bottom: 0rem;
+}
+
+.pusher
+{
+    margin-left: 11rem;
+    margin-right: 1rem;
+    margin-top: 4.5rem;
+    
+}
+
+.titleCol
+{
+    padding-top: 2rem;
+}
+
+.titleImg
+{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+
+}
+
+.card
+{
+    margin-top: 5rem;
+    width: 30rem;
+}
+
+.navbar
+{
+    margin-bottom: 1rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: #546E7A;
+}
+
+#replies
+{
+    margin-top: 1rem;
+    margin-left: 10rem;
+}
+
