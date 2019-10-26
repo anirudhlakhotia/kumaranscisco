@@ -1,0 +1,82 @@
+<div class="background">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <body>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+          <div class="navbar-collapse collapse justify-content-between">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">LOGO</a>
+                  </li>
+                  <!--->
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>---->
+              </ul>
+
+              <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+              <div class="navbar-nav">
+                  <a class="nav-item nav-link" href="#" routerLink="/dashboard">Dashboard</a>
+                  <a class="nav-item nav-link" href="#" routerLink="/achievements">Achievements</a>
+                  <a class="nav-item nav-link" routerLink="/">Logout</a>
+
+              </div>
+
+          </div>
+          
+      </nav>
+
+    <div class="event-create">  
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Create Event
+    </button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Event</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <form #f="ngForm">
+                    <div class="container">
+                        <input type="text" placeholder="Event Name" class="form-control" required ngModel name="eventname" #eventname="ngModel">
+                        <span class="help-block" *ngIf="!eventname.valid && eventname.touched">Please enter Event Name</span>
+                        <p></p>
+                        <label for="date">Event Date</label>
+                        <input type="date" id="date" required ngModel name="doe" #doe="ngModel">
+                        <span class="help-block" *ngIf="!doe.valid && doe.touched">Please add Event date</span>
+                        <p></p>
+                        <input type="text" placeholder="Enter a link to your website" class="form-control" required ngModel name="eventlink" #eventlink="ngModel">
+                        <span class="help-block" *ngIf="!eventlink.valid && eventlink.touched">Please add a link to your website</span>
+                        <p></p>
+                        <input type="text" placeholder="Phone Number" pattern="[6789][0-9]{9}" required ngModel name="phoneno" #phoneNo="ngModel">
+                        <span class="help-block" *ngIf="!phoneNo.valid && phoneNo.touched">Please add contact Number</span>
+                        <p></p>
+                        <textarea id="bio" name="address" required placeholder="Event Address" ngModel address #address="ngModel" cols="30" rows="10"></textarea>
+                        <span class="help-block" *ngIf="!address.valid && address.touched">Please Enter Event Address</span>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button class="btn btn-primary" [disabled]="!f.valid">Save changes</button>
+             </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</div>  

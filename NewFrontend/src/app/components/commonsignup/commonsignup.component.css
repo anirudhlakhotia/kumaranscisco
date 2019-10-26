@@ -1,0 +1,20 @@
+body {
+    background-image: url(https://clubkendoupc.com/wp-content/uploads/2017/01/search-background-img.jpg);
+    height: 170vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .block{
+    display: block;
+    height:30%;
+    width: 100%;
+    border-width: 5px;
+    padding: 14px 28px;
+    font-size: 80px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
